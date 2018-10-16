@@ -1,0 +1,215 @@
+邮箱：
+zhuguolin@ppfuns.com 密码：Y5AFBFaxHM
+
+重命名地址：ftp://10.231.171.142/data/upload/jshyvideo/
+            ftp://10.231.171.142/data/upload/video/
+
+媒资117同步：ftp://117.135.159.4	jshy	11111111	9800
+
+同步代码：setsid rsync -vzrtopgu  --progress rsync://user@117.135.159.40:8173/toJSHY/   /data/swap01/jshyvideo/
+
+查询指令 ： ps axu|grep rsyns
+
+
+算出时长命令
+ffmpeg -i 3535.ts 2>&1 | grep 'Duration' | cut -d ' ' -f 4 | sed s/,// 获取视频时长的最新命令，请大家惠存，可精确到秒
+mediainfo 2202.ts |grep Duration
+
+FTE调速
+http://10.231.171.152:4180/login.jsp
+
+
+重庆拷贝视频文件过程：
+1.建立记录视频表格，使用SecureCRT连接IP地址10.231.171.142；
+2.输入命令 cd  /data/upload/jshyvideo/MP4  按回车;
+3,scp 1982.ts root@192.168.125.124:/data/ftpsite/user1 按回车；
+4，输入密码 27U+7+fH 按回车  出现传输的链接 完成。
+
+
+外网ilive地址：http://103.251.84.180:2053/pplive/ilive.jsp
+内网ilive地址：http://10.231.171.152:8083/pplive/ilive.jsp
+
+外网CLPS地址：http://103.251.84.180:2058/clps/#%7B%22main%22%3A1%7D
+内网clps地址：http://10.231.171.137:8180/clps/#%7B%22main%22%3A1%2C%22main/page%22%3A%7B%22s%22%3A%7B%22o%22%3A%5B%22-1%22%2C%22128100%22%2C%22128106%22%5D%2C%22s%22%3A%5B%22128214%22%5D%7D%2C%22t%22%3A%22catalog%22%7D%7D
+
+运营系统地址：http://103.251.84.180:2067/mgmt/#
+运营系统内网：http://10.231.171.147:8008/mgmt/
+用户消息系统：http://103.251.84.180:2084/ucm/#（陕西顶端文字消息）
+消息公告：http://125.210.117.58:8060/ucm/#	用户名：admin	密码：	ucm@ppfuns.com （华数站点链接红A华数VPN）
+
+外网CIP地址：http://103.251.84.180:2051/jscip/desktop.jsp
+内网CIP地址：http://10.231.171.142:8383/jscip/desktop.jsp
+
+陕西审核地址：http://10.43.116.173:8080/ott_cip/desktop.jsp（链接陕西VPN）
+账号密码：jszq/jszq
+
+PPTV内容：
+ftp://10.231.171.142/data/swap01/jshyvideo/
+
+陕西VPN
+IP　:  124.47.4.6
+    账号：chanpinbu@zhuozhuang.com 
+    密码：chanpinbu123
+
+小飞机SVN：ip地址：103.251.84.180    账号sihua   密码sihua_1aqz
+
+OA：http://58.61.149.134/
+
+测试环境（内网）
+cip:http://10.231.171.33:8383/jscip/desktop.jsp 
+
+
+Pplive:http://10.231.171.33:8083/pplive/ilive.jsp
+
+
+Clps:http://10.231.171.32:8081/clps.jsp
+账号密码
+admin/pplive@ppfuns.com
+
+节目单频道计算公式
+=IF(B1="","",VLOOKUP(B1,IF({1,0},A$1:A$4,C$1:C$4),2,))
+
+网络监控：
+http://10.231.171.30/zabbix/screens.php?elementid=20
+
+广告地址路径
+/opt/guanggao/Video/20180330/1269.ts
+
+内网Wifi密码：11111111
+
+直播节目单变更解决：
+op-sports@ppfuns.com
+ 
+op.ppfuns2018
+PPTV直播中心值班电话：13321821353
+
+QQ互动
+:
+账号：3590500667
+:
+密码：jushihuyu2018
+
+思华金鹏程（小金）电话：18814887204
+
+CIP、CLPS新登录密码：666666
+
+cip备用账号
+hqx，666
+
+内网连接NAS
+
+\\192.168.130.254
+
+
+用户名ppfuns
+密码jushihuyu2018
+
+找图片 https://www.gettyimages.co.uk/
+
+天津的点播专线通，可以点播内容的注入。（天津xml的导入）
+正式AM系统登录信息如下：
+http://111.161.115.9:8090/admin.html
+
+账号：JSHY
+
+密码：jshy1qaz-2wsx
+
+操作员账号：JSHY_CP
+
+密码：jshy1qaz-3wsx
+媒资发布天津后，下载天津xml文件：ftp://tjdaochu:tjdaochu@10.231.171.152  （内网）
+
+天津测试AM地址：http://124.239.251.100:8090/admin.html 密码jshy-123456
+jshy-123456789
+
+（云转码）MP4转码成.ts格式（视频格式）：
+地址：https://10.231.171.216:8443/cmp/home.mvc#  
+账户：transcode  密码：sumavisionrd
+
+转码器后台地址：http://10.231.171.203 （控制频道的开启和关闭）
+账户：Admin  密码：sumavisionrd
+江西转码器  
+http://192.168.99.107
+
+  
+账户：Admin  
+密码：sumavisionrd
+
+sender中心控制播放地址：http://103.251.84.180:2071/  （删除频道，在ilive重新下发）
+账号密码：admin/admin ； zhuguolin/zhuguolin@ppfuns.com
+
+新的sender页面：（轮播）
+http://10.231.171.3:4180/   
+账号密码：admin； zhuguolin/zhuguolin@ppfuns.com
+
+陕西vpn链接方法，电脑连200，链接陕西VPN，打开网络设置，点击以太网，点击右侧的更改适配器选项，选择陕西vpn，右键，属性，共享，把已选的勾去掉，确定。然后重新陕西vpn，右键，属性，共享，把勾选上，选择以太网，确定。
+
+安徽WEB首页：http://117.71.44.9:8085/superSports/page/index.html
+
+
+工单信息：http://117.71.44.3:8082/c2in/Action/Ii_in_cmd/ListPage.do
+
+
+ftp://117.135.159.4:9800/
+
+安徽帕科后台：http://117.71.44.3:8081/privatemanage	
+账户：jshy密码：jshy123
+
+搬迁FTE地址：
+陕西   http://10.231.171.134:4180/index.html
+福建   http://10.231.171.31:4180/index.html
+天津   http://10.231.171.152:4180/index.html
+华数   http://10.231.171.152:4180/index.html
+中心sender   http://10.231.171.150:4180/index.html
+江西http://10.231.171.155:4180/index.html
+账号/密码：  admin / admin 
+
+建立子频道，sender设备地址配置为http://10.231.171.2:8552
+广告上传的地方：ftp://guanggao:guanggao@10.231.171.2:21/
+广告路径：/mnt/video/
+          /mnt/video/ceshiguanggao/shanxi30.ts
+播放频道--对应子频道：如pptvfj1sender。
+/mnt/video/Video/20180612/2132.ts=世界杯-世界杯大数据-维京人连战大赛上升势头令人惊喜-节目
+/mnt/video/Video/20180519/1905.ts=世界杯-宣传片激情热血泪目俄罗斯今夏将掀热浪世界杯真的要来了-节目
+
+编码器插广告地址：
+ftp://xmanager2000:xmanager2000@10.231.171.203:21/logo/
+编码器后台--任务管理--对应频道--修改--字母参数--台标
+左：1720  上：880     区域200，高200
+
+陕西竞猜网（链接陕西VPN）
+http://10.43.116.23:9072/index.html#
+
+
+pp体育下载媒资会员：13928490129 chenx7070
+
+媒资下载：ftp://117.135.159.4	jshy	11111111	9800
+
+PPTV高级会员 13928490129  chenx0707
+
+华数首页：http://125.210.117.55/templates/tyzd/runtime/hsmbz/template/index_football.jsp（连VPN）
+
+陕西数据：http://10.43.124.126/portal/readData.jsp
+
+PPTV网络问题找李志勇，18618561330；潘小珍 15013642947
+
+涉及到思华的BUG，就用这个表，发送邮件给技术部，黄成礼huangchengli<huangchengli@ppfun.com>，抄送给梁红兵lianghongbing梁总，胡财忺hucaixian<hucaixian@ppfuns.com>，礼波。
+
+央视审核紧急电话：值班电话0510-81817661。
+
+河北的工单地址 ：http://172.72.2.4:18288/c2in/Action/Ii_in_cmd/ListPage.do
+
+重庆公告：http://192.168.125.119/cq-sports-cms-web/  账号：jty  密码：jshy8888 访问需要内网
+http://192.168.19.39:8180/cq-sports-cms-web/#/Login  这个账号没权限操作通告的：sports  /  123456     sports  /  jushihuyu2018
+
+
+CRT用户名和密码修改，请将原来的删除，用户名：tiyubu，密码：ppfuns
+
+外网ilive地址：http://103.251.84.180:2053/pplive/ilive.jsp
+内网ilive地址：http://10.231.171.152:8083/pplive/ilive.jsp
+
+外网CLPS地址：http://103.251.84.180:2058/clps
+内网CLPS地址：http://10.231.171.137:8180/clps
+
+外网CIP地址：http://103.251.84.180:2051/jscip/desktop.jsp
+内网CIP地址：http://10.231.171.142:8383/jscip/desktop.jsp

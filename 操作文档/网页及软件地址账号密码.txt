@@ -1,0 +1,9 @@
+UMS£ºhttp://192.168.130.210:11780/ums/login;jsessionid=13EDCEA1BFCE7BC827CE494D99585E91  ÕËºÅ£ºadmin  ÃÜÂë£ºBohui@123
+
+MCS(»­ÃæÔÆ)£ºhttp://192.168.130.210:55080/mcs/login.html  ÕËºÅ£ºadmin  ÃÜÂë£ºBohui@123
+
+IP89£ºhttp://10.231.172.6/   ÕËºÅ£ºadmin  ÃÜÂë£ºBohui@123
+
+Èí¼ş£ºDisplay ÕËºÅ£ºDVB  ÃÜÂë£ºDVB
+
+Èí¼ş£ºEasyCloudÖ÷¿ØÇ°¶Ë  ÕËºÅ£ºadmin  ÃÜÂë£ºBohui@123
