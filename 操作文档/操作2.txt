@@ -1,0 +1,212 @@
+重命名地址：ftp://10.231.171.142/data/upload/jshyvideo/
+            ftp://10.231.171.142/data/upload/video/
+查询文件路径：find . -name 4300.ts
+
+账号添加权限代码：sudo chmod 775 文件名
+但凡使用正常指令无法将媒资进行cp、重命名等情况时使用，每次该媒资出现这样的情况就添加一次权限，因为文件伴随着权限过来。
+查询cp的媒资进度指令：du -hs /data/upoad/video/4329.ts
+
+            
+算出时长命令
+mediainfo 1983.ts |grep Duration （算1小时以内的文件）
+ffmpeg -i 12.ts 2>&1 | grep 'Duration' | cut -d ' ' -f 4 | sed s/,//（算1小时以上的文件）
+
+
+内容同步，最新命令：rsync -vzrtopgu  --progress rsync://user@124.108.2.214:8173/toJSHY/   /data/swap01/jshyvideo/
+按Ctrl+C可结束同步命令，有直播的话至少提前半小时结束拉取任务
+
+
+FTE调速
+http://10.231.171.152:4180/login.jsp
+
+
+重庆拷贝视频文件过程：
+1.建立记录视频表格，使用SecureCRT连接IP地址10.231.171.142；
+2.输入命令 cd  /data/upload/jshyvideo/MP4  按回车;
+3,scp 1982.ts root@192.168.125.124:/data/ftpsite/user1 按回车；
+4，输入密码 27U+7+fH 按回车  出现传输的链接 完成。
+
+
+外网ilive地址：http://103.251.84.180:2053/pplive/ilive.jsp
+内网ilive地址：http://10.231.171.152:8083/pplive/ilive.jsp
+
+外网CLPS地址：http://103.251.84.180:2058/clps/#%7B%22main%22%3A1%7D
+内网clps地址：http://10.231.171.137:8180/clps/#%7B%22main%22%3A1%2C%22main/page%22%3A%7B%22s%22%3A%7B%22o%22%3A%5B%22-1%22%2C%22128100%22%2C%22128106%22%5D%2C%22s%22%3A%5B%22128214%22%5D%7D%2C%22t%22%3A%22catalog%22%7D%7D
+
+运营系统地址：http://103.251.84.180:2067/mgmt/#
+运营系统内网：http://10.231.171.147:8008/mgmt/
+用户消息系统：http://103.251.84.180:2084/ucm/#（陕西顶端文字消息）
+
+外网CIP地址：http://103.251.84.180:2051/jscip/desktop.jsp
+内网CIP地址：http://10.231.171.142:8383/jscip/desktop.jsp
+
+陕西审核地址：http://10.43.116.173:8080/ott_cip/desktop.jsp（链接陕西VPN）
+账号密码：jszq/jszq
+
+PPTV内容：ftp地址，ftp://117.135.159.4	用户名：jshy	密码：11111111	端口：9800
+
+陕西VPN
+IP　:  124.47.4.6
+    账号：chanpinbu@zhuozhuang.com 
+    密码：chanpinbu123
+
+小飞机SVN：ip地址：103.251.84.180    账号sihua   密码sihua_1aqz
+
+OA：http://58.61.149.134/
+
+测试环境（内网）
+cip:http://10.231.171.33:8383/jscip/desktop.jsp 
+
+
+Pplive:http://10.231.171.33:8083/pplive/ilive.jsp
+
+
+Clps:http://10.231.171.32:8081/clps.jsp
+账号密码
+admin/pplive@ppfuns.com
+
+节目单频道计算公式
+=IF(B1="","",VLOOKUP(B1,IF({1,0},A$1:A$4,C$1:C$4),2,))
+
+网络监控：
+http://10.231.171.30/zabbix/screens.php?elementid=20
+
+广告地址路径
+/opt/guanggao/Video/20180330/1269.ts
+
+内网Wifi密码：11111111
+
+直播节目单变更解决：
+op-sports@ppfuns.com
+ 
+op.ppfuns2018
+PPTV直播中心值班电话：13321821353
+
+QQ互动
+:
+账号：3590500667
+:
+密码：jushihuyu2018
+
+思华金鹏程（小金）电话：18814887204
+
+CIP、CLPS新登录密码：666666
+
+cip备用账号
+hqx，666
+
+内网连接NAS
+
+\\192.168.130.254
+
+
+用户名ppfuns
+密码jushihuyu2018
+
+找图片 https://www.gettyimages.co.uk/
+
+媒资发布天津后，下载天津xml文件：ftp://tjdaochu:tjdaochu@10.231.171.152  （内网）
+
+天津的点播专线通，可以点播内容的注入。（天津xml的导入）
+正式AM系统登录信息如下：
+http://111.161.115.9:8090/admin.html
+
+账号：JSHY
+
+密码：jshy1qaz-2wsx
+
+操作员账号：JSHY_CP
+
+密码：jshy1qaz-2wsx
+
+
+MP4转码成.ts格式（视频格式）：
+地址：https://10.231.171.216:8443/cmp/home.mvc#  
+账户：transcode  密码：sumavisionrd
+
+转码器后台地址：http://10.231.171.203 （控制频道的开启和关闭）账户：Admin  密码：sumavisionrd
+
+sender中心控制播放地址：http://103.251.84.180:2071/  （删除频道，在ilive重新下发）
+账号密码：admin/admin ； zhuguolin/zhuguolin@ppfuns.com
+
+陕西vpn链接方法，电脑连200，链接陕西VPN，打开网络设置，点击以太网，点击右侧的更改适配器选项，选择陕西vpn，右键，属性，共享，把已选的勾去掉，确定。然后重新陕西vpn，右键，属性，共享，把勾选上，选择以太网，确定。
+
+安徽WEB首页：http://117.71.44.7:8085/superSports/page/index.html
+
+
+工单信息：http://117.71.44.3:8082/c2in/Action/Ii_in_cmd/ListPage.do
+
+
+ftp://117.135.159.4:9800/
+
+搬迁FTE地址：
+陕西   http://10.231.171.134:4180/index.html
+福建   http://10.231.171.31:4180/index.html
+天津   http://10.231.171.152:4180/index.html
+华数   http://10.231.171.152:4180/index.html
+中心sender   http://10.231.171.150:4180/index.html
+账号/密码：  admin / admin 
+
+建立子频道，sender设备地址配置为http://10.231.171.2:8552
+广告上传的地方：ftp://guanggao:guanggao@10.231.171.2:21/
+广告路径：/mnt/video/
+          /mnt/video/ceshiguanggao/shanxi30.ts
+播放频道--对应子频道：如pptvfj1sender。
+
+编码器插广告地址：
+ftp://xmanager2000:xmanager2000@10.231.171.203:21/logo/
+编码器后台--任务管理--对应频道--修改--字母参数--台标
+左：1720  上：880     区域200，高200
+
+
+
+体育图片：https://www.gettyimages.co.uk/ 
+
+
+\\192.168.130.254    用户名ppfuns   密码jushihuyu2018
+
+
+
+
+流转码：地址：http://10.231.171.203 
+账户：Admin  
+密码：sumavisionrd
+
+安徽工单地址
+http://117.71.44.3:8082/c2in/Action/Ii_in_cmd/ListPage.do
+
+江西转码器
+http://192.168.99.107
+
+账户：Admin  
+密码：sumavisionrd
+
+
+每天轮播节目单更改了下发，内容同步到clps后，要发布陕西站点直播厅、华数站点首页推荐位一、中超首页推荐位一、西甲推荐位一；安徽站点首页推荐位一；福建站点首页推荐位一；江西直播厅@所有人，请知悉。
+
+
+Ilive的轮播节目单中，直播节目开始前对某个视频选择一直轮播：
+/mnt/video/Video/20180612/2106.ts 
+
+Ilive轮播节目单插入地址：
+对应该节目中，ILIVE直播频道的播放地址
+
+新的sender页面：（轮播）
+http://10.231.171.3:4180/   
+账号密码：admin
+
+江西转码器
+http://192.168.99.107
+
+账户：Admin  
+密码：sumavisionrd
+
+PPTV高级会员 账号：13928490129   密码：chenx0707
+
+轮播插直播前，设置循环播放的地址：/mnt/video/Video/20180612/1886.ts
+
+轮播节目单更新注意事项：本日晚编明日的轮播节目，下发前要把本日前一天及以前的轮播节目单删除，否则会下发sender失败！
+
+东莞FTP,公网直接登录183.61.189.196，端口号12121，用户名，jutiyu,密码：jutiyu123，这是访问大Video的，如果想在线预览，可以在VLC直接输入ts路径，即可观看，例如：ftp://jutiyu:jutiyu123@183.61.189.196:12121/20180119/075.ts，下载预览速度都比我们的用专线要快
+
+
